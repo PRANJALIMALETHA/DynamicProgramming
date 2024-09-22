@@ -1,0 +1,23 @@
+import java.util.*;
+public class climbingstair{
+    public static int  findno(int n )
+    {
+        if(n==1||n==0)
+        {
+            return 1;
+        }
+        int a=findno(n-1);
+        int b =findno(n-2);
+        return a+b;
+
+
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.print(findno(a));
+
+    }
+
+}
